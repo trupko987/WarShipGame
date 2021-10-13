@@ -2,7 +2,6 @@ package homework;
 
 public abstract class Ship {
 	
-	//nesto mi nije radilo najbolje sa private, pa sam koristio protected modifikator
 	protected int health;
 	protected int speed;
 
