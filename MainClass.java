@@ -6,11 +6,6 @@ public class MainClass {
 
 	public static void main(String[] args) {
 
-		//Ideja je da napravim niz brodova (napravio sam samo tri, da bude skraceno, ali moglo je biti koliko god) gdje svako svakog napada
-		//kao bacaju kockicu i sad onda nasumicno napadaju i na kraju ko ostane taj je pobjednik
-		//klasu cargo i njene cerke klase nisam ni koristio jer se po zadatku nije nista ni trazilo osim pravljenja
-		//bilo je mucenja, plus dosta posla ovih dana, jedva stizem da uradim
-		
 		BattleShip[] nizBrodova = new BattleShip[3];
 		
 		nizBrodova[0] = new SmallShip();
@@ -21,7 +16,7 @@ public class MainClass {
 		boolean mogucNapad = true;
 		
 		while (mogucNapad) {
-			Random rn = new Random(); //htio sam da improvizujem kockicu, pa sam trazio pomoc prijatelja koji mi je objasnio ovaj nacin
+			Random rn = new Random();
 			int napadIx = rn.nextInt(3);
 			int odbranaIx = rn.nextInt(3);
 			
@@ -47,7 +42,7 @@ public class MainClass {
 				}
 			}
 			
-			mogucNapad = brojac > 1; //skracena verzija kondicionala (koristio google)
+			mogucNapad = brojac > 1;
 		}
 		
 		for (int i = 0; i < 3; i++) {
